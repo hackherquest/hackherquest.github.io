@@ -46,28 +46,6 @@ body {
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar-item {
-    float: none;
-    display: none;
-    width: 100%;
-  }
-  .navbar-item a {
-    text-align: left;
-  }
-  .icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 14px 16px;
-    background-color: #333;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
-}
-
 /* Additional CSS for responsive class */
 .navbar.responsive .navbar-item {
   display: block;
@@ -106,6 +84,33 @@ body {
   margin-bottom: 2%;
   width: 70%;
   padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-item {
+    float: none;
+    display: none;
+    width: 100%;
+  }
+  .navbar-item a {
+    text-align: left;
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 16px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .box-left, .box-right {
+    margin-left: 1%;
+    margin-right: 1%;
+    width: auto; 
+  }
 }
 
 .white-text {
