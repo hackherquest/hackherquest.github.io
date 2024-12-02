@@ -115,6 +115,7 @@ body {
   margin-right: auto;
   margin-top: 2%;
   margin-bottom: 2%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add a dark shadow */
 }
 
 .white-text li {
@@ -122,6 +123,7 @@ body {
   font-size: 20px;
   margin-left: 0%;
   margin-right: 5%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add a dark shadow */
 }
 
 .logo {
