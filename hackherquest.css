@@ -111,6 +111,7 @@ body {
 .white-text {
   color: #fff;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
   margin-left: 2%;
   margin-right: auto;
   margin-top: 2%;
