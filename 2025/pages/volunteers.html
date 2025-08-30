@@ -11,6 +11,18 @@
 
 <body>
 
+    <!-- GOOGLE TRANSLATE ELEMENT -->
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+    }
+    </script>
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- ------------------------ -->
+
     <!-- NAVBAR -->
     <nav>
         <ul class="navbar" id="navbar">
@@ -21,9 +33,8 @@
             <li class="navbar-item"><a href="./speakers.html">Speakers</a></li>
             <li class="navbar-item"><a href="./sign-up.html">Sign up</a></li>
             <li class="navbar-item"><a href="./sponsorships.html">Sponsorships</a></li>
-            <li class="navbar-item"><a class="active" href="./contact.html">Contact</a></li>
-            <li class="navbar-item"><a href="./volunteers.html">Acknowledgements</a></li>
-            <li class="navbar-item"><a href="./pages/previous_editions.html">Previous editions</a></li>
+            <li class="navbar-item"><a href="./contact.html">Contact</a></li>
+            <li class="navbar-item"><a class="active" href="./volunteers.html">Acknowledgements</a></li>
         </ul>
         <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">&#9776;</a>
     </nav>
@@ -35,21 +46,12 @@
             
             <img src="../pictures/hackherquest_w_on_b.png" class="logo" alt="Hack{h}erQuest">
             
-            <h1 class="white-text" style="font-size: 35px;">Contact us</h1>
-
-            <div class="box-left" style="background-color: #fff; color: #000;">
-                <h2 style="font-family: 'Courier New', Courier, monospace;">Need to contact us?</h2>
-                <p style="font-family: 'Courier New', Courier, monospace;">If you have a question, please feel free to contact us at </p>
-                <p style="font-family: 'Courier New', Courier, monospace; font-weight: bold;">hackherquest "at" gmail "dot" com</p>
-            </div>
-            <p class="white-text">
-                <a href="https://www.linkedin.com/company/hackherquest/" style="color:white; text-decoration:none;">
-                    <img src="../pictures/linkedin.png" width="200px" height="auto">
-                </a>
-                <a href="https://www.instagram.com/hackherquest/" style="color:white; text-decoration:none;">
-                    <img src="../pictures/instagram2.png" width="200px" height="auto">
-                </a>
+            <h1 class="white-text" style="font-size: 35px;">Acknowledgements</h1>
+            <p class="white-text" style="font-size: 20px; margin-right:20px; font-weight:bold;">
+                All of this would not have been possible without the help of volunteers. Therefore, we offer our special thanks to:
+                Professor Buhan, Professor Samardjiska, Aidan Stephenson, Anca Strulea, Harm Roukema, Michel de Boer, Jonathan Jagt, and other anonymous contributers.
             </p>
+
         </div>
 
     </div>
