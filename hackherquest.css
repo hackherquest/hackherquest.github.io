@@ -1,9 +1,13 @@
-body {
+/* body {
   background-image: url('https://raw.githubusercontent.com/hackherquest/hackherquest.github.io/main/pictures/girl1.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: top;
+} */
+
+body {
+  background: #808080;
 }
 
 .navbar {
