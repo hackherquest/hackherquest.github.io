@@ -12,23 +12,21 @@ body {
   background: #808080;
 } */
 
-/* NAVBAR STYLES */
 .navbar {
   list-style-type: none;
-  padding: 0;
-  margin: 2% auto 0 auto;
-  width: 80%;
+  padding: 20px;
+  overflow: hidden;
   background-color: #333;
-  height: 48px; /* Set fixed height */
-  display: flex;
-  align-items: center;
-  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  width: 80%;
 }
 
 .navbar-item {
-  float: none;
-  display: flex;
-  align-items: center;
+  float: left;
 }
 
 .navbar-item a {
@@ -39,9 +37,6 @@ body {
   text-decoration: none;
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
-  height: 48px;
-  line-height: 20px;
-  box-sizing: border-box;
 }
 
 .navbar-item a:hover:not(.active) {
@@ -52,77 +47,24 @@ body {
   background-color: #d41ea6;
 }
 
-/* Hamburger icon hidden by default */
-.navbar-item.icon {
+/* Responsive navbar */
+.icon {
   display: none;
 }
 
-/* Responsive navbar */
-@media screen and (max-width: 600px) {
-  .navbar {
-    flex-wrap: wrap;
-    height: 48px;
-    min-height: 48px;
-  }
-  .navbar-item {
-    display: none;
-    width: 100%;
-    float: none;
-    justify-content: flex-start;
-  }
-  .navbar-item.icon {
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 48px;
-    align-items: center;
-    z-index: 2;
-    background: transparent;
-    width: auto;
-  }
-  .navbar-item.icon a {
-    padding: 12px 16px;
-    font-size: 24px;
-    height: 48px;
-    background: transparent;
-    color: white;
-    display: flex;
-    align-items: center;
-  }
-  .navbar.responsive {
-    height: auto;
-    min-height: 48px;
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .navbar.responsive .navbar-item {
-    display: flex;
-    width: 100%;
-    background-color: #333;
-    border-top: 1px solid #222;
-    justify-content: flex-start;
-  }
-  .navbar.responsive .navbar-item.icon {
-    border-top: none;
-    background: transparent;
-  }
-  .navbar.responsive .navbar-item a {
-    text-align: left;
-    padding-left: 24px;
-    height: 48px;
-    align-items: center;
-    display: flex;
-  }
+/* Additional CSS for responsive class */
+.navbar.responsive .navbar-item {
+  display: block;
 }
 
 /* Box styles */
 .box {
   background-color: rgb(0 0 0 / 0.7);
+/*   background-color: rgba(0, 0, 0, 0.85); */
   color: #fff;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
+  margin-top: 0; /* Remove top margin */
   margin-bottom: 40px;
   width: 80%;
   padding: 20px;
@@ -133,7 +75,7 @@ body {
   color: #fff;
   margin-left: 1%;
   margin-right: auto;
-  margin-top: 0;
+  margin-top: 0; /* Remove top margin */
   margin-bottom: 2%;
   width: 70%;
   padding: 20px;
@@ -144,13 +86,32 @@ body {
   color: #fff;
   margin-left: auto;
   margin-right: 1%;
-  margin-top: 0;
+  margin-top: 0; /* Remove top margin */
   margin-bottom: 2%;
   width: 70%;
   padding: 20px;
 }
 
 @media screen and (max-width: 600px) {
+  .navbar-item {
+    float: none;
+    display: none;
+    width: 100%;
+  }
+  .navbar-item a {
+    text-align: left;
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 16px;
+    background-color: #333;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
   .box-left, .box-right {
     margin-left: 1%;
     margin-right: 1%;
@@ -166,8 +127,8 @@ body {
   margin-right: auto;
   margin-top: 2%;
   margin-bottom: 2%;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
-  line-height: 1.5;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add a dark shadow for readability. */
+  line-height: 1.5; /* Increase line-height for readbility. */
 }
 
 .white-text li {
@@ -175,7 +136,7 @@ body {
   font-size: 20px;
   margin-left: 0%;
   margin-right: 5%;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8); /* Add a dark shadow */
 }
 
 .logo {
@@ -190,8 +151,10 @@ body {
   margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
+
   text-align: center;
   text-decoration: none;
+
   font-weight: bold;
   font-size: 16px;
   font-family: 'Courier New', Courier, monospace;
