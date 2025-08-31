@@ -102,10 +102,10 @@ body {
     text-align: left;
   }
   .icon {
-    display: flex;
+    /* display: flex; */
     position: relative;
-    /* display: block;
-    position: absolute; */
+    display: block;
+    /* position: absolute; */
     right: 0;
     top: 0;
     padding: 14px 16px;
