@@ -102,13 +102,11 @@ body {
     text-align: left;
   }
   .icon {
-    /* display: flex; */
+    display: flex;
     position: relative;
-    display: block;
-    /* position: absolute; */
     right: 0;
     top: 0;
-    padding: 14px 16px;
+    width: auto; 
     background-color: #333;
     color: white;
     font-size: 24px;
