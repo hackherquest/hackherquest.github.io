@@ -24,6 +24,10 @@ body {
   margin-top: 2%;
   margin-bottom: 0%;
   width: 80%;
+
+  display: flex;
+  justify-content: center; /* Center navbar items horizontally */
+  position: relative;
 }
 
 .navbar-item {
