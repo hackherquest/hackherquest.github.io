@@ -98,13 +98,18 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: flex-start; /* Align items to the start */
+    /* width: 100%; Full width on small screens */
+  }
   .navbar-item {
     float: none;
     display: none;
     width: 100%;
   }
   .navbar-item a {
-    text-align: left;
+    text-align: center;
   }
   .icon {
     display: flex;
