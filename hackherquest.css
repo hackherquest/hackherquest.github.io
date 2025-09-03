@@ -176,7 +176,8 @@ p {
 
 .button {
   border: none;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
+  padding: clamp(8px, 3vw, 20px) clamp(16px, 6vw, 40px);
   display: inline-block;
   margin: 4px 2px;
   margin-left: 2%;
@@ -187,7 +188,8 @@ p {
   text-decoration: none;
 
   font-weight: bold;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: clamp(1rem, 3vw, 1.25rem);
   font-family: 'Courier New', Courier, monospace;
 }
 
