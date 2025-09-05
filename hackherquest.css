@@ -60,7 +60,7 @@ h3 {
   width: 80%;
 
   display: flex;
-  justify-content: center; /* Center navbar items horizontally */
+  justify-content: center; 
   position: relative;
 }
 
@@ -86,12 +86,10 @@ h3 {
   background-color: #d41ea6;
 }
 
-/* Responsive navbar */
 .icon {
   display: none;
 }
 
-/* Additional CSS for responsive class */
 .navbar.responsive .navbar-item {
   display: block;
 }
