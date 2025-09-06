@@ -32,7 +32,7 @@ p {
 }
 
 .inline-logo {
-  height: clamp(8em, 24vw, 16em);  
+  height: clamp(8em, 24vw, 12em);  
   vertical-align: middle;
 }
 
