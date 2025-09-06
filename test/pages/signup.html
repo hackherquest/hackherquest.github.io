@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="../pictures/logo.jpeg">
+        <title>Hack{h}erQuest</title>
+        <link href="../test.css" rel="stylesheet">
+        <script src="../test.js"></script>
+        <style>
+            body {
+                background: url('../pictures/ctf2.JPG') no-repeat center center fixed;
+                background-size: cover;
+                min-height: 100vh;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(255,255,255,0.2); /* semi-transparent white */
+            z-index: 0;
+            pointer-events: none;
+            }
+          
+        </style>
+    </head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">&#9776;</a>
+        <ul class="navbar" id="navbar">
+            <!-- <li class="navbar-item icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li> -->
+            <li class="navbar-item"><a href="../index.html">Home</a></li>
+            <li class="navbar-item"><a href="./whatisctf.html">What is a CTF?</a></li>
+            <li class="navbar-item"><a href="./team.html">The team</a></li>
+            <li class="navbar-item"><a href="./schedule.html">Schedule</a></li>
+            <li class="navbar-item"><a href="./workshops.html">Workshops</a></li>
+            <li class="navbar-item"><a class="active" href="./signup.html">Sign up</a></li>
+            <li class="navbar-item"><a href="./sponsorships.html">Sponsorships</a></li>
+            <li class="navbar-item"><a href="./contact.html">Contact</a></li>
+            <li class="navbar-item"><a href="./acknowledgements.html">Acknowledgements</a></li>
+            <!-- <li class="navbar-item"><a href="./previous_editions.html">Previous editions</a></li> -->
+        </ul>
+    </nav>  
+
+    <div class="hero-spacer" style="height: 70vh;">
+        <h1 style="color: black;text-align: center; margin: 0%;">Join the competition</h1>
+    </div>
+
+    <div class="page-content black-page-content">
+        <div class="content-wrapper">
+            <!-- Your page text/content goes here -->
+            <!-- <img src="../pictures/hackherquest_w_on_b.png" alt="Logo" class="inline-logo"> -->
+            <p class="white-text">
+                The event will take place on Saturday the 7th of February 2026, on the campus of Radboud 
+                University in Nijmegen. 
+                <ul class="white-text">
+                    <li class="white-text">
+                        It is possible to sign up for only the workshops or only the
+                        CTF. However, we give preference to women who will be participating 
+                        throughout the entire day.
+                    </li>
+                    <li class="white-text">
+                        Because the event promotes women in Cyber Security, you 
+                        have to identify as a female student to participate in any of the events.
+                    </li>
+                    <!-- <li class="white-text" style="font-size: 20px; font-weight:bold;">
+                        Lunch will also only be provided to participants who will be attending the entire day. 
+                        Please inform us of any dietary restrictions when you sign up through the Google form.
+                    </li> -->
+                    <!-- <li class="white-text" style="font-size: 20px; font-weight:bold;">
+                        The groups are semi-random, which means that you can sign up for the CTF
+                        competition either on our own or with a buddy.
+                    </li> -->
+                    <li class="white-text">
+                        In total there are 52 spots available. It is possible to sign up as a PhD student. 
+                        However, preference is given to highschool and university studens (MBO, HBO, WO).
+                        Sign-ups are first-come-first-serve. In case of late sign-ups, we give preference 
+                        to candidates from underrepresented groups.
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="page-content white-page-content">
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-text">
+                <h2 class="section-title" style="color: #333;">Sign-up!</h2>
+                <p class="black-text"> 
+                    The Capture The Flag (CTF) competition is a cybersecurity competition where participants solve cyber security related challenges 
+                    to find hidden flags. The competition is open to all skill levels, but the challenges will lean more towards
+                    beginner and intermediate levels. The competition will be held on-site and will last for 3,5 hours. 
+                    <br><br>
+                    If you do not know what a CTF is, please refer to the <a href="./whatisctf.html" style="color:#333; font-weight:bold;">"What is a CTF?"</a> page.
+                    <br><br>
+                    <p style="color: red; font-family: 'Courier New', Courier, monospace; font-weight: bold;">
+                        Please keep in mind that the sign-ups open halfway through Obtober. If you already wish to secure a spot, please send us an email at
+                        "hackherquest" "at" "gmail" "dot" "com". Keep in mind that the workshops can change.
+                    </p>
+                    <button class="button pink-button" style="margin-left: 2%;" onclick='location.href="./signup.html"''>Sign up for the Hackathon</button>
+                    <button class="button black-button" onclick='location.href="workshops.html"''>View workshops</button>
+                </p>
+                </div>
+                <div class="success-image">
+                <img src="../pictures/lisanne_ctf.png" style="max-height: 640px; max-width: 540px;" alt="Success 2025" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <p class="footer black-text">© 2024 Hack{h}erQuest &#10084;</p>
+</footer>
+</html>

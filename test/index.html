@@ -7,6 +7,26 @@
         <title>Hack{h}erQuest</title>
         <link href="./test.css" rel="stylesheet">
         <script src="./test.js"></script>
+        <style>
+            body {
+                background: url('../pictures/welcome_talk.JPG') no-repeat center center fixed;
+                background-size: cover;
+                min-height: 100vh;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            body::before {
+                content: "";
+                position: fixed;
+                top: 0; left: 0; right: 0; bottom: 0;
+                background: rgba(255,255,255,0.5); /* semi-transparent white */
+                z-index: 0;
+                pointer-events: none;
+            }
+        </style>
     </head>
 
 <body>
@@ -18,59 +38,63 @@
             <!-- <li class="navbar-item icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li> -->
             <li class="navbar-item"><a class="active" href="./index.html">Home</a></li>
             <li class="navbar-item"><a href="./pages/whatisctf.html">What is a CTF?</a></li>
-            <li class="navbar-item"><a href="./pages/ourmission.html">The team</a></li>
+            <li class="navbar-item"><a href="./pages/team.html">The team</a></li>
             <li class="navbar-item"><a href="./pages/schedule.html">Schedule</a></li>
             <li class="navbar-item"><a href="./pages/speakers.html">Workshops</a></li>
-            <li class="navbar-item"><a href="./pages/sign-up.html">Sign up</a></li>
+            <li class="navbar-item"><a href="./pages/signup.html">Sign up</a></li>
             <li class="navbar-item"><a href="./pages/sponsorships.html">Sponsorships</a></li>
             <li class="navbar-item"><a href="./pages/contact.html">Contact</a></li>
-            <li class="navbar-item"><a href="./pages/volunteers.html">Acknowledgements</a></li>
-            <li class="navbar-item"><a href="./pages/previous_editions.html">Previous editions</a></li>
+            <li class="navbar-item"><a href="./pages/acknowledgements.html">Acknowledgements</a></li>
+            <!-- <li class="navbar-item"><a href="./pages/previous_editions.html">Previous editions</a></li> -->
         </ul>
     </nav>  
 
-    <div class="hero-spacer"></div>
+    <div class="hero-spacer" style="height: 70vh;"></div>
 
     <div class="page-content black-page-content">
-        <!-- Your page text/content goes here -->
-        <img src="../pictures/hackherquest_w_on_b.png" alt="Logo" class="inline-logo">
-        <p class="white-text">
-            We will organize a <a href="./pages/whatisctf.html" style="color:white; font-weight:bold;">Capture The Flag (CTF)</a> competition on Saturday the 7th of February 2026
-            on the campus of Radboud University. The event is open to female high school- and (applied) university students (MBO, HBO, and WO).
-            <br><br>
-            The goal of the event is to:
-            <ul class="white-text">
-                <li class="white-text">Bring women together in a space where they can dive into cybersecurity, 
-                    learn from each other, and build confidence in their skills. Cybersecurity 
-                    can feel like a tough field to break into, especially with so few women 
-                    represented.
-                </li>
-                <li class="white-text">Create a supportive, welcoming environment where 
-                    women can practice, solve challenges, and show what they're capable of.
-                </li>
-                <li class="white-text">Encourage more women to explore and stick with 
-                    cybersecurity, build connections, and feel empowered to take on 
-                    bigger roles in this space.
-                </li>
-            </ul>
-        </p>
-            <button class="button pink-button" onclick='location.href="./pages/sign-up.html"''>Sign up for the Event</button>
-            <button class="button white-button" onclick='location.href="./pages/sponsorships.html"''>Support our mission</button>
+        <div class="content-wrapper">
+            <!-- Your page text/content goes here -->
+            <img src="./pictures/hackherquest_w_on_b.png" alt="Logo" class="inline-logo">
+            <p class="white-text">
+                We will organize a <a href="./pages/whatisctf.html" style="color:white; font-weight:bold;">Capture The Flag (CTF)</a> competition on Saturday the 7th of February 2026
+                on the campus of Radboud University. The event is open to female high school- and (applied) university students (MBO, HBO, and WO).
+                <br><br>
+                The goal of the event is to:
+                <ul class="white-text">
+                    <li class="white-text">Bring women together in a space where they can dive into cybersecurity, 
+                        learn from each other, and build confidence in their skills. Cybersecurity 
+                        can feel like a tough field to break into, especially with so few women 
+                        represented.
+                    </li>
+                    <li class="white-text">Create a supportive, welcoming environment where 
+                        women can practice, solve challenges, and show what they're capable of.
+                    </li>
+                    <li class="white-text">Encourage more women to explore and stick with 
+                        cybersecurity, build connections, and feel empowered to take on 
+                        bigger roles in this space.
+                    </li>
+                </ul>
+            </p>
+                <button class="button pink-button" onclick='location.href="./pages/signup.html"''>Sign up for the Event</button>
+                <button class="button white-button" onclick='location.href="./pages/sponsorships.html"''>Support our mission</button>
+        </div>
     </div>
 
     <div class="page-content white-page-content">
-        <div class="success-flex">
-            <div class="success-text">
-            <h3 class="section-title" style="color: #333;">Read about last year's success!</h3>
-            <p class="black-text"> 
-                In 2025, we organized our first edition of HackherQuest, a Capture The Flag (CTF) competition
-                exclusively for women. The event inspired many young women to join the field and explore their 
-                interest in cybersecurity. You can read all about it in our 
-                <a href="./pages/previous_editions.html" style="color:#333; font-weight:bold;">previous editions</a> page!
-            </p>
-            </div>
-            <div class="success-image">
-            <img src="../pictures/aliza.JPG" alt="Success 2025" />
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-text">
+                <h3 class="section-title" style="color: #333;">Read about last year's success!</h3>
+                <p class="black-text"> 
+                    In 2025, we organized our first edition of HackherQuest, a Capture The Flag (CTF) competition
+                    exclusively for women. The event inspired many young women to join the field and explore their 
+                    interest in cybersecurity. You can read all about it in our 
+                    <a href="./pages/previous_editions.html" style="color:#333; font-weight:bold;">previous editions</a> page!
+                </p>
+                </div>
+                <div class="success-image">
+                    <img src="./pictures/aliza.JPG" alt="Success 2025" />
+                </div>
             </div>
         </div>
     </div>
