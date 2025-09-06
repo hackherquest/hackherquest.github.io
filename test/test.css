@@ -407,7 +407,7 @@ footer {
   }
 
   td, th {
-  padding: 1px;
+    padding: 1px;
   }
 
   /* .button {
@@ -422,7 +422,7 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%; /* or 100% for full width, adjust as needed */
+    width: 100%; /* or 100% for full width, adjust as needed */
     text-align: center;
   }
 
