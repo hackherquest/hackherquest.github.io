@@ -121,7 +121,7 @@ nav {
   background-color: #d41ea6;
 }
 
-.icon {
+/* .icon {
   display: block;
   position: relative;
   right: 0;
@@ -139,12 +139,12 @@ nav {
   color: white;
   text-align: left;
   padding: 14px 16px;
-}
+} */
 .navbar.responsive .icon {
   display: block;
 }
 
-/* .icon {
+.icon {
   display: none;
   color: white;
   text-align: left;
@@ -152,7 +152,7 @@ nav {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   text-decoration: none;
-} */
+}
 
 .navbar.responsive .navbar-item {
   display: block;
