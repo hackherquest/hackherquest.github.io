@@ -132,7 +132,7 @@ nav {
   font-size: 28px;
   cursor: pointer;
   z-index: 101;
-  
+
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   text-decoration: none;
@@ -395,7 +395,11 @@ footer {
     font-size: 28px;
     cursor: pointer;
     z-index: 101;
+
+    text-align: left;
+    padding: 14px 16px;
   }
+  
   .navbar.responsive .icon {
     display: block;
   }
