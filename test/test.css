@@ -412,7 +412,7 @@ footer {
 
   table {
     width: 100% !important;
-    min-width: 0;
+    max-width: 1200px;
     margin-left: 0;
     margin-right: 0;
     font-size: 0.95em;
