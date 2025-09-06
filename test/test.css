@@ -410,14 +410,22 @@ footer {
   padding: 1px;
   }
 
-  .button {
+  /* .button {
     margin: 16px 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+    text-align: center;
+  } */
+  .button {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 90%; /* or 100% for full width, adjust as needed */
     text-align: center;
   }
+
   .success-flex {
     flex-direction: column;
     align-items: stretch;
