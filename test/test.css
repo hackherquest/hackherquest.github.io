@@ -401,13 +401,26 @@ footer {
     /* margin-left: 2%; */
     margin-right: auto;
   }
-  table {
+  /* table {
     width: 100%;
     padding: 0%;
   }
 
   td, th {
     padding: 1px;
+  } */
+
+  table {
+    width: 100% !important;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 0.95em;
+  }
+  td, th {
+    padding: 6px 2px;
+    font-size: 0.95em;
+    word-break: break-word;
   }
 
   /* .button {
@@ -439,7 +452,9 @@ footer {
     width: 100%;
   }
   .content-wrapper {
-    padding: 0rem 1rem;          /* Optional: add some horizontal padding */
+    padding: 1rem 0.2rem;
+    width: 100%;
+    max-width: 100vw;
   }
   .social-links img {
     width: 80px;
