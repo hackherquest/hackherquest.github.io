@@ -121,29 +121,6 @@ nav {
   background-color: #d41ea6;
 }
 
-/* .icon {
-  display: block;
-  position: relative;
-  right: 0;
-  top: 0;
-  width: auto; 
-  background-color: #333;
-  color: white;
-  font-size: 28px;
-  cursor: pointer;
-  z-index: 101;
-
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 600;
-  text-decoration: none;
-  color: white;
-  text-align: left;
-  padding: 14px 16px;
-} */
-.navbar.responsive .icon {
-  display: block;
-}
-
 .icon {
   display: none;
   color: white;
@@ -152,6 +129,10 @@ nav {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   text-decoration: none;
+}
+
+.navbar.responsive .icon {
+  display: block;
 }
 
 .navbar.responsive .navbar-item {
