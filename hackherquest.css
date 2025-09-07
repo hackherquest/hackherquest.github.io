@@ -341,7 +341,7 @@ footer {
 }
 
 .speaker-socials a:hover {
-  color: #f00e86;
+  color: #f00e86 !important;
 }
 
 .speaker-socials img {
