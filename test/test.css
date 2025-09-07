@@ -367,7 +367,7 @@ footer {
   }
   .icon {
     display: block;
-    position: relative;
+    position: absolute;
     right: 0;
     top: 0;
     width: auto; 
