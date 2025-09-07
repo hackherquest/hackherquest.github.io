@@ -366,15 +366,14 @@ footer {
     display: block;
   }
   .icon {
-    display: block;
+    display: inline-block;
     position: fixed;
-    position: relative;
     left: 0;
     top: 0;
     width: auto; 
     background-color: #333;
     color: white;
-    font-size: 28px;
+    font-size: 24px;
     cursor: pointer;
     z-index: 101;
 
