@@ -7,47 +7,46 @@
         <title>Hack{h}erQuest</title>
         <link href="../hackherquest.css" rel="stylesheet">
         <script src="../hackherquest.js"></script>
+        <style>
+            body {
+                background: linear-gradient(135deg, #5a00d0, #ff0080);
+                background-size: cover;
+                min-height: 100vh;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+        </style>
     </head>
 
 <body>
 
-    <!-- GOOGLE TRANSLATE ELEMENT -->
-    <!-- <div id="google_translate_element"></div>
-
-    <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-    </script>
-    
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-    <!-- ------------------------ -->
-
     <!-- NAVBAR -->
     <nav>
+        <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">&#9776;</a>
         <ul class="navbar" id="navbar">
-            <li class="navbar-item icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li>
+            <!-- <li class="navbar-item icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li> -->
             <li class="navbar-item"><a href="../index.html">Home</a></li>
             <li class="navbar-item"><a class="active" href="./whatisctf.html">What is a CTF?</a></li>
-            <li class="navbar-item"><a href="./ourmission.html">The team</a></li>
+            <li class="navbar-item"><a href="./team.html">The team</a></li>
             <li class="navbar-item"><a href="./schedule.html">Schedule</a></li>
-            <li class="navbar-item"><a href="./speakers.html">Workshops</a></li>
-            <li class="navbar-item"><a href="./sign-up.html">Sign up</a></li>
+            <li class="navbar-item"><a href="./workshops.html">Workshops</a></li>
+            <li class="navbar-item"><a href="./signup.html">Sign up</a></li>
             <li class="navbar-item"><a href="./sponsorships.html">Sponsorships</a></li>
             <li class="navbar-item"><a href="./contact.html">Contact</a></li>
-            <li class="navbar-item"><a href="./volunteers.html">Acknowledgements</a></li>
-            <li class="navbar-item"><a href="./previous_editions.html">Previous editions</a></li>
+            <li class="navbar-item"><a href="./acknowledgements.html">Acknowledgements</a></li>
+            <!-- <li class="navbar-item"><a href="./previous_editions.html">Previous editions</a></li> -->
         </ul>
-    </nav>
+    </nav>  
 
+    <div class="hero-spacer" style="height: 10vh;"></div>
 
-    <!-- CONTENT -->
-    <div class="wrapper">
-        <div class="box">
-            
-            <img src="../pictures/hackherquest_w_on_b.png" class="logo" alt="Hack{h}erQuest">
-            
-            <h3>What is a CTF?</h3>
+    <div class="page-content black-page-content">
+        <div class="content-wrapper">
+            <img src="../pictures/hackherquest_w_on_b.png" alt="Logo" class="inline-logo">
+            <h2>What is a CTF?</h2>
             <p class="white-text">
                 In a Capture The Flag (CTF) competition, the goal is to obtain the 'flag' by hacking into a vulnerable system.
                 For example in web challenges, you have to break into a website to obtain the flag. Whereas in cryptography, 
@@ -56,13 +55,7 @@
                 The flag is a string of text that you submit to the competition platform to score points. It usually looks something
                 like this: 
             </p>
-                
-            <div class="box-left" style="max-width: 440px; width:auto;">
-                <p class="white-text">
-                    FLAG{Th1s_1s_aN_ExaMplE_fl4G}
-                </p>
-            </div>
-
+            <p class="white-text" style="font-weight: bold;">FLAG{4N_ExaMplE_fl4G}</p>
             <p class="white-text">
                 This flag can then be handed in to the competition platform to score points. The team with the most points 
                 at the end of the competition wins.
@@ -76,7 +69,12 @@
             </p>
         </div>
     </div>
+    
+    <div class="hero-spacer" style="height: 5vh;"></div>
+
+
 </body>
 <footer>
-    <p class="footer">© 2024 Hack{h}erQuest &#10084;</p>
+    <p class="footer black-text">© 2024 Hack{h}erQuest &#10084;</p>
 </footer>
+</html>

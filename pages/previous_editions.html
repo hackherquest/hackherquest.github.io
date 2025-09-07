@@ -3,49 +3,50 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="./pictures/logo.jpeg">
+        <link rel="icon" type="image/x-icon" href="../pictures/logo.jpeg">
         <title>Hack{h}erQuest</title>
-        <link href="../hackherquest.css" rel="stylesheet">
-        <script src="../hackherquest.js"></script>
+        <link href="../test.css" rel="stylesheet">
+        <script src="../test.js"></script>
+        <style>
+            body {
+                background: linear-gradient(135deg, #5a00d0, #ff0080);
+                background-size: cover;
+                min-height: 100vh;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+        </style>
     </head>
 
 <body>
 
-    <!-- GOOGLE TRANSLATE ELEMENT -->
-    <!-- <div id="google_translate_element"></div>
-
-    <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-    }
-    </script> -->
-    
-    <!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-    <!-- ------------------------ -->
-
     <!-- NAVBAR -->
     <nav>
+        <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">&#9776;</a>
         <ul class="navbar" id="navbar">
-            <li class="navbar-item icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li>
+            <!-- <li class="navbar-item icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li> -->
             <li class="navbar-item"><a href="../index.html">Home</a></li>
             <li class="navbar-item"><a href="./whatisctf.html">What is a CTF?</a></li>
-            <li class="navbar-item"><a href="./ourmission.html">The team</a></li>
+            <li class="navbar-item"><a href="./team.html">The team</a></li>
             <li class="navbar-item"><a href="./schedule.html">Schedule</a></li>
-            <li class="navbar-item"><a href="./speakers.html">Workshops</a></li>
-            <li class="navbar-item"><a href="./sign-up.html">Sign up</a></li>
+            <li class="navbar-item"><a href="./workshops.html">Workshops</a></li>
+            <li class="navbar-item"><a href="./signup.html">Sign up</a></li>
             <li class="navbar-item"><a href="./sponsorships.html">Sponsorships</a></li>
             <li class="navbar-item"><a href="./contact.html">Contact</a></li>
-            <li class="navbar-item"><a href="./volunteers.html">Acknowledgements</a></li>
-            <li class="navbar-item"><a class="active" href="./previous_editions.html">Previous editions</a></li>
+            <li class="navbar-item"><a class="active" href="./acknowledgements.html">Acknowledgements</a></li>
+            <!-- <li class="navbar-item"><a href="./previous_editions.html">Previous editions</a></li> -->
         </ul>
-    </nav>
+    </nav>  
 
+    <div class="hero-spacer" style="height: 10vh;"></div>
 
-    <!-- CONTENT -->
-    <div class="wrapper">
-        <div class="box">
-            <img src="../pictures/hackherquest_w_on_b.png" class="logo" alt="Hack{h}erQuest">
-            <h3>Previous editions</h3>
+    <div class="page-content black-page-content" style="width: 80%; ">
+        <div class="content-wrapper">
+            <img src="../pictures/hackherquest_w_on_b.png" alt="Logo" class="inline-logo">
+            <h2>Previous editions</h2>
             <p class="white-text">
                 View previous editions of Hack{h}erQuest:
                 <ul class="white-text">
@@ -57,7 +58,12 @@
             </p>
         </div>
     </div>
+    
+    <div class="hero-spacer" style="height: 5vh;"></div>
+
+
 </body>
 <footer>
-    <p class="footer">© 2024 Hack{h}erQuest &#10084;</p>
+    <p class="footer black-text">© 2024 Hack{h}erQuest &#10084;</p>
 </footer>
+</html>
