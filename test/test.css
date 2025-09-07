@@ -32,7 +32,7 @@ p {
 }
 
 .inline-logo {
-  height: clamp(8em, 24vw, 12em);  
+  height: clamp(8em, 24vw, 14em);  
   vertical-align: middle;
 }
 
@@ -287,10 +287,13 @@ footer {
   flex: 0 1 40%;
   min-width: 180px;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
 }
 
 .success-image img {
+  display: block;
+
   max-width: 100%;
   width: 100%;
   height: auto;
@@ -432,11 +435,18 @@ footer {
   }
   .success-image {
     justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
     margin-top: 1.5rem;
   }
   .success-image img {
     max-width: 90vw;
     width: 100%;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
   }
   .content-wrapper {
     padding: 1rem 0.2rem;
