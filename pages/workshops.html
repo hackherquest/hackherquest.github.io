@@ -18,6 +18,21 @@
                 flex-direction: column;
                 position: relative;
             }
+            .success-image-row {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .success-image-row img {
+                max-width: 220px;
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+                box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+            }
         </style>
     </head>
 
@@ -49,7 +64,7 @@
     <div class="page-content white-page-content">
         <div class="content-wrapper">
             <div class="success-flex">
-                <div class="success-text">
+                <div class="success-text" style="max-width: 1200px;text-align: center;flex: 1 1 55%;margin-left: auto;margin-right: auto;">
                 <h2 class="section-title" style="color: #000000;">Extend your knowledge</h2>
                 <p class="black-text"> 
                     In order to train your skills before the CTF, we have arranged several workshops that will be held during the morning.
@@ -64,6 +79,10 @@
                 <p class="black-text">
                     Please keep in mind that the schedule and workshops can change.
                 </p>
+                </div>
+                <div class="success-image-row" style="gap: 2rem; margin-left: auto; margin-right: auto;">
+                    <img src="../pictures/z3-1.png" alt="Success 2025" style="max-height: 420px; max-width: 520px;"/>
+                    <img src="../pictures/lizzy.png" alt="Success 2025" style="max-height: 420px; max-width: 480px;"/>
                 </div>
             </div>
         </div>
