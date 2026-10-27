@@ -3,13 +3,13 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" type="image/x-icon" href="../pictures/logo.jpeg">
+        <link rel="icon" type="image/x-icon" href="./pictures/logo.jpeg">
         <title>Hack{h}erQuest</title>
         <link href="./hackherquest.css" rel="stylesheet">
         <script src="./hackherquest.js"></script>
         <style>
             body {
-                background: url('./pictures/welcome_talk.JPG') no-repeat center center fixed;
+                background: linear-gradient(135deg, #5a00d0, #ff0080);
                 background-size: cover;
                 min-height: 100vh;
                 height: 100%;
@@ -18,148 +18,112 @@
                 flex-direction: column;
                 position: relative;
             }
-            body::before {
-                content: "";
-                position: fixed;
-                top: 0; left: 0; right: 0; bottom: 0;
-                background: rgba(255,255,255,0.2); /* semi-transparent white */
-                z-index: 0;
-                pointer-events: none;
+            .white-page-content {
+                width: 90%;
+                max-width: 1200px;
+                margin: 0 auto;
+                box-sizing: border-box;
             }
-            /* .success-image-row {
-                display: flex;
-                flex-direction: row;
-                gap: 2rem;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
+            .black-button:hover {
+            background-color: #f885c2;
             }
-            .success-image-row img {
-                max-width: 220px;
-                width: 100%;
-                height: auto;
-                border-radius: 12px;
-                box-shadow: 0 2px 12px rgba(0,0,0,0.12);
-            }
-            .success-text {
-                text-align: center;
-                flex: 1 1 55%;
-                max-width: 900px; 
-                margin-left: auto;
-                margin-right: auto;
-            } */
         </style>
     </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">&#9776;</a>
-        <ul class="navbar" id="navbar">
-            <!-- <li class="navbar-item icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li> -->
-            <li class="navbar-item"><a class="active" href="./index.html">Home</a></li>
-            <li class="navbar-item"><a href="./pages/whatisctf.html">What is a CTF?</a></li>
-            <li class="navbar-item"><a href="./pages/team.html">The team</a></li>
-            <li class="navbar-item"><a href="./pages/schedule.html">Schedule</a></li>
-            <li class="navbar-item"><a href="./pages/workshops.html">Workshops</a></li>
-            <li class="navbar-item"><a href="./pages/signup.html">Sign up</a></li>
-            <li class="navbar-item"><a href="./pages/sponsors.html">Sponsors</a></li>
-            <li class="navbar-item"><a href="./pages/contact.html">Contact</a></li>
-            <li class="navbar-item"><a href="./pages/acknowledgements.html">Acknowledgements</a></li>
-            <!-- <li class="navbar-item"><a href="./pages/previous_editions.html">Previous editions</a></li> -->
-        </ul>
-    </nav>  
-
-    <div class="hero-spacer" style="height: 70vh;">
-        <!-- <img src="./pictures/hackherquest_b_on_w.png" alt="Logo" class="inline-logo" style="display: block; margin-left: auto; margin-right: auto; width: 70%; height: auto;"> -->
-        <!-- <h1 style="color: black;text-align: center; margin: 0%;">Welcome to Hack{h}erQuest</h1> -->
-    </div>
-
-    <div class="page-content black-page-content">
-        <div class="content-wrapper">
-            <!-- Your page text/content goes here -->
-            <img src="./pictures/hackherquest_w_on_b.png" alt="Logo" class="inline-logo">
-            <p class="white-text">
-                We will organize a <a href="./pages/whatisctf.html" style="color:white; font-weight:bold;">Capture The Flag (CTF)</a> competition on Saturday the 7th of February 2026
-                on the campus of Radboud University. The event is open to female high school- and (applied) university students (MBO, HBO, and WO).
-                <br><br>
-                The goal of the event is to:
-            </p>
-                <ul class="white-text">
-                    <li class="white-text">Bring women together in a space where they can dive into cybersecurity, 
-                        learn from each other, and build confidence in their skills. Cybersecurity 
-                        can feel like a tough field to break into, especially with so few women 
-                        represented.
-                    </li>
-                    <li class="white-text">Create a supportive, welcoming environment where 
-                        women can practice, solve challenges, and show what they're capable of.
-                    </li>
-                    <li class="white-text">Encourage more women to explore and stick with 
-                        cybersecurity, build connections, and feel empowered to take on 
-                        bigger roles in this space.
-                    </li>
-                </ul>
-            <br>
-            <p class="white-text">
-                <ul class="white-text">
-                    <li class="white-text" style="font-weight: bold; line-height: normal;">What: A Capture The Flag (CTF) competition with workshops</li>
-                    <li class="white-text" style="font-weight: bold; line-height: normal;">When: Saturday, 7th of February 2026</li>
-                    <li class="white-text" style="font-weight: bold; line-height: normal;">Where: Radboud University, Nijmegen, The Netherlands</li>
-                    <li class="white-text" style="font-weight: bold; line-height: normal;">Who: Students who identify as female</li>
-                    <!-- <li class="white-text" style="font-weight: bold; line-height: normal;">Sign-ups open on October 7th, 2025!</li> -->
-                </ul>
-            </p>
-            <br>
-            <button class="button pink-button" onclick='location.href="./pages/signup.html"''>Sign up for the Event</button>
-            <button class="button white-button" onclick='location.href="./pages/sponsorships.html"''>Support our mission</button>
-        </div>
-    </div>
+    <div class="hero-spacer" style="height: 5vh;"></div>
 
     <div class="page-content white-page-content">
-        <div class="content-wrapper">
-            <div class="success-flex">
-                <div class="success-text">
-                    <h3 class="section-title" style="color: #333;">Last year's edition</h3>
-                    <!-- <h3 class="section-title" style="color: #333;">Read about last year's success!</h3> -->
-                    <p class="black-text"> 
-                        In 2025, we organized our first edition of HackherQuest, a Capture The Flag (CTF) competition
-                        exclusively for women. The event inspired many young women to join the field and explore their 
-                        interest in cybersecurity. 
-                        <br><br>
-                        The day started with an opening speech by our lovely chairwoman Novi, and some CTF tips from Lisanne. 
-                        It was followed by a set of workshops form our amazing speakers: Professor Buhan, Anca Strulea, Harm Roukema, 
-                        Michel de Boer, and Aliza Reif. 
-                        <br><br>
-                        After lunch, the CTF competition started. The infrastructure of which was accounted for 
-                        by cybersecurity association StudSec. The participants were divided into teams of 3-4 people,
-                        and they had to solve a variety of cybersecurity challenges. The winning team was 'Jane Doe', who managed to beat 
-                        the competition by a 100 point lead! 
-                        <br><br>
-                        The day ended with a closing speech from Professor Samardjiska, who represented 
-                        the Gender & Diversity ('GenDI') group of Radboud University. She talked about her journey in cybersecurity and her 
-                        experience as a woman in the field. Overall, the event was a huge success, and we are already looking forward to the 
-                        next edition! See you there?
-                        <br><br>
-                        All of this would not have been possible without the help of our sponsors and
-                        volunteers. Therefore, we offer our special thanks to the GenDI group for sponsoring
-                        our event, and to StudSec, Professor Buhan, Professor Samardjiska, Aidan
-                        Stephenson, Philip Constantinou, Anca Strulea, Harm Roukema, Michel de Boer,
-                        Jonathan Jagt, and other anonymous contributors for creating the workshops and
-                        CTF challenges as well as helping out during the event itself.
-                    </p>
-                </div>
-                <div class="success-image" style="gap: 2rem;">
-                    <img src="./pictures/aliza.JPG" alt="Success 2025" style="max-height: 520px; max-width: 520px;"/>
-                    <img src="./pictures/hw2_blur.png" alt="Success 2025" style="max-height: 520px; max-width: 520px;"/>
-                    <img src="./pictures/web1.jpeg" alt="Success 2025" style="max-height: 520px; max-width: 520px;"/>
-                </div>
-            </div>
+        <div style="text-align: center;">
+            <img src="./pictures/hackherquest_b_on_w.png" alt="Logo" class="inline-logo">
+            <h2 style="color: black;">Women's Hacking Competition</h2>
         </div>
-    </div>
+        <p class="black-text", style="font-weight: normal;">
+            Next February the 20th in 2027, we are organizing the 3rd edition of Hack{h}erQuest! 
+            As a cool hacker, you should totally join &#128526;. We have fun workshops to
+            exhance your skills and a Capture the Flag (CTF) competition in the afternoon
+            so that you can show everyone who is the true <s>Mr.</s> Ms. Robot. 
+            <br><br>
+            The event details are... <i>drumroll please</i>
+        </p>
+        <ul class="black-text">
+            <li class="black-text" style="font-weight: normal; line-height: normal;"><b>What:</b> A Capture The Flag (CTF) competition with workshops</li>
+            <li class="black-text" style="font-weight: normal; line-height: normal;"><b>When:</b> Saturday, 20th of February 2027</li>
+            <li class="black-text" style="font-weight: normal; line-height: normal;"><b>Where:</b> Radboud University, Nijmegen, The Netherlands</li>
+            <li class="black-text" style="font-weight: normal; line-height: normal;"><b>Who:</b> Students who identify as female (all backgrounds and skill levels)</li>
+            <li class="black-text" style="font-weight: normal; line-height: normal;"><b>Sign-ups</b> open on January 9th, 2027</li>
+        </ul>
 
-<footer>
-    <p class="footer black-text">© 2024 Hack{h}erQuest &#10084;</p>
-</footer>
+        <button class="button black-button">Sign up for Hack{h}erQuest!</button>
+        <!-- <button class="button black-button" onclick='location.href="https://forms.gle/rRTged2suZ71TXVX6"''>Sign up for Hack{h}erQuest!</button> -->
+
+        <br>
+        <div style="max-width: 600px; margin: 0 auto;">
+            <img
+                src="./pictures/group_photo_2026.jpg"
+                alt="Group photo 2026"
+                style="width: 100%; height: auto; display: block;"
+            />
+        </div>
+        <br>
+
+        <!-- workshops -->
+        <p class="black-text", style="font-weight: normal;">
+            <b>Workshops</b><br>
+            Previous years we had workshops on amongst others cryptography, mobile security, and reversing. The workshops for next year 
+            will be published in December this year. Have a cool idea of your own? Please use the Google form for workshop ideas and 
+            we will get back to you end of November &#128064;.
+        </p>
+
+        <!-- CTF -->
+        <p class="black-text", style="font-weight: normal;">
+            <b>Capture The Flag</b><br>
+            We have a small CTF competition for smashing the stack & fun. In a CTF, the goal is to 
+            obtain the 'flag' by hacking into a vulnerable system. For example in web challenges, you have to break into a website 
+            to obtain the flag. Whereas in cryptography, you have to break the encryption to obtain the flag. 
+            <br><br>
+            The flag is a string of text that you submit to the competition platform to score points. It usually looks something
+            like this: FLAG{4N_ExaMplE_fl4G}
+        </p>
+
+        <!-- Networking -->
+        <p class="black-text", style="font-weight: normal;">
+            <b>Networking</b><br>
+            There will opportunities throughout the day to meet fellow hacking-elite witches. Even though we know the computer screen  
+            to be comfortable, we highly recommend asking your peers about their day and whether they have any PHP-containing websites 
+            that were left unupdated recently.
+        </p>
+
+        <!-- FAQ -->
+        <p class="black-text", style="font-weight: normal;">
+            <b>FAQ</b><br>
+            <i>Can I sign up for only the workshops or only the CTF?</i><br>
+            Yes you aboslutely can! Preference is given to female students who sign up for the entire day.
+            <br><br>
+            <i>I identify as a woman, but I am no longer a student. Can I still sign up?</i><br>
+                Definitely, we do not have a strict cut-off. Previous participants included both highschoolers as well as older 
+                women looking for a career change. Preference is given to female students, so keep in mind that most participants 
+                will be roughly between the age of 18-25. If you are okay with being called grandma&#128117; you are more than welcome
+                to sign up.
+            <br><br>
+            <i>Lunch?</i><br>
+                We try to arrange lunch, but no promises. We accomodate allergies. However, in cases of extreme allergies that 
+                can result in emergency situations, we request you pack your own lunch. 
+            <br><br>
+            <i>Language?</i><br>
+                The main language throughout the day will be English. There will be Dutch-speaking volunteers available to help
+                translate when necessary.
+            <br><br>
+            <i>I have another question.</i><br>
+                Please email us: hackherquest "at" gmail "dot" com
+            <br><br>
+        </p>
+
+
+        <p class="black-text" style="text-align: center;">
+            © 2026 Hack{h}erQuest
+        </p>
+
 </body>
 </html>
