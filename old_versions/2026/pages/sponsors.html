@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="../pictures/logo.jpeg">
+        <title>Hack{h}erQuest</title>
+        <link href="../hackherquest.css" rel="stylesheet">
+        <script src="../hackherquest.js"></script>
+        <style>
+            body {
+                /* background: linear-gradient(135deg, #5a00d0, #ff0080); */
+                background:  #281030;
+                background-size: cover;
+                min-height: 100vh;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            @media (max-width: 1400px) {
+                .sponsor-border .sponsor-star:nth-child(4) {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                .sponsor-border .sponsor-star:nth-child(4) {
+                    margin-bottom: 0.3em;
+                }
+            }
+            .filter-white {
+                filter: brightness(0) invert(1);
+            }
+        </style>
+    </head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">&#9776;</a>
+        <ul class="navbar" id="navbar">
+            <!-- <li class="navbar-item icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li> -->
+            <li class="navbar-item"><a href="../index.html">Home</a></li>
+            <li class="navbar-item"><a href="./whatisctf.html">What is a CTF?</a></li>
+            <li class="navbar-item"><a href="./team.html">The team</a></li>
+            <li class="navbar-item"><a href="./schedule.html">Schedule</a></li>
+            <li class="navbar-item"><a href="./workshops.html">Workshops</a></li>
+            <li class="navbar-item"><a href="./signup.html">Sign up</a></li>
+            <li class="navbar-item"><a class="active" href="./sponsors.html">Sponsors</a></li>
+            <li class="navbar-item"><a href="./contact.html">Contact</a></li>
+            <li class="navbar-item"><a href="./acknowledgements.html">Acknowledgements</a></li>
+            <!-- <li class="navbar-item"><a href="./previous_editions.html">Previous editions</a></li> -->
+        </ul>
+    </nav>  
+
+    <!-- <div class="hero-spacer" style="height: 40vh;">
+            put something here
+    </div> -->
+
+    <!-- SPONSORSHIP REQUEST -->
+    <div class="page-content white-page-content" style="background-color: #fdfbfb;">
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-text">
+                <img src="../pictures/hackherquest_b_on_w.png" alt="Logo" style="align-items: center; justify-content: center; max-height: 740px; max-width: 740px;">
+                <h2 class="section-title" style="color: #000;">Many thanks to our amazing sponsors!</h2>
+                <!-- <p class="black-text"> 
+                    We are still looking for sponsors in order to provide the following to the participants:
+                    <ul class="black-text" style="text-align: left; margin: 0 auto; padding-left: 1.5em; display: block; width: fit-content;">
+                        <li class="black-text">Traveling costs for volunteers.</li>
+                        <li class="black-text">Overnight stay for out-of-town participants (= more than 2 hours travel one-way).</li>
+                        <li class="black-text">Lunch and drinks</li>
+                        <li class="black-text">Prizes for the winners</li>
+                    </ul>
+                    <br><br>
+                <p class="black-text">
+                    If you are or know someone who can help us out, please email us at: 
+                </p>
+                <p class="black-text" style="font-weight: bold;">hackherquest "at" gmail "dot" com</p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VOLUNTEERS -->
+    <!-- <div class="page-content white-page-content" style="background: #d41ea6;">
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-text">
+                <h2 class="section-title" style="color: #fff;">We need volunteers!</h2>
+                <p class="white"> 
+                    We are also looking for volunteers to help us during the event. If you are interested, please email us at:
+                </p>
+                <p class="white" style="font-weight: bold;">hackherquest "at" gmail "dot" com</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- RADBOUD UNIVERSITY -->
+    <div class="sponsor-highlight">
+        <div class="sponsor-border"> <!--  style="margin-bottom: 0.8em;"> -->
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">Radboud University</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+        </div>
+        <div class="page-content black-page-content" style="background: #700d0d;"> <!--style="background: #b25a08; style="background: #ca6609;" -->
+            <div class="content-wrapper">
+                <div class="success-flex">
+                    <div class="success-image" style="max-height: 640px; max-width: 640px;">
+                        <img src="../pictures/RU_logo_NL_wit.png" alt="Radboud University" class="filter-white" style="box-shadow: none !important;"/>
+                    </div>
+                    <div class="success-text">
+                        <h2 class="section-title" style="color: #fff;">Radboud University</h2>
+                        <p class="white-text"> 
+                        The Radboud Student Fund subsidises initiatives, projects and organisations that have an impact on Nijmegen student life and are 
+                        in line with the strategic themes of Radboud University. The fund does this based on the belief that it has a positive effect on 
+                        the development and well-being of students. 
+                        <br><br>
+                        Radboud University is a research university located in Nijmegen, the Netherlands.Through the Radboud Student Fund, Radboud University 
+                        is kindly sponsoring Hack{h}erQuest to support our mission. They recognize the importance of diversity and inclusion in education and are 
+                        committed to fostering an environment where all students can thrive and succeed. By sponsoring events like Hack{h}erQuest, they aim to 
+                        inspire more women to consider careers in cybersecurity and technology, helping to bridge the gender gap in these fields.
+                        <br><br>
+                        Radboud University offers a Bachelor's program in Computing Science that provides students with a solid foundation in computer science 
+                        principles and practices. The program covers a wide range of topics, including programming, algorithms, data structures, software engineering, 
+                        and computer systems. Students also have the opportunity to specialize in areas such as software science, cybersecurity, and data science.
+                        <br><br>
+                        Additionally, Radboud University offers several Master's programs in Computing Science, allowing students to further deepen their knowledge and 
+                        expertise in specific areas of interest. These programs often include advanced coursework, research opportunities, and practical projects that 
+                        prepare students for careers in academia and industry.
+                        <br><br>
+                        <h3>Curious?</h3>
+                        <a href="https://www.ru.nl/en/education/bachelors/computing-science" style="color:white; font-family: 'Courier New', Courier, monospace; font-size: large;">Read more about the Bachelor's program in Computing Science at Radboud University here.</a>
+                        <br><br>
+                        <a href="https://www.ru.nl/en/education/masters/computing-science" style="color:white; font-family: 'Courier New', Courier, monospace; font-size: large;">Read more about the Master's programs in Computing Science at Radboud University here.</a>
+                        <br><br>
+                        <a href="https://www.ru.nl/en/education/scholarships" style="color:white; font-family: 'Courier New', Courier, monospace; font-size: large;">Don't have the financial means to study? Checkout the various scholarships offered at Radboud University here.</a>
+                        <br><br>
+                        <p class="white-text">Read more about Radboud University here:</p><br>
+                        <a href="https://www.ru.nl/en" style="color:white; font-family: 'Courier New', Courier, monospace; font-size: large;">https://www.ru.nl/en</a>
+                        </p>
+                        <br><br>
+                        <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                            <a href="https://www.linkedin.com/school/radboud-university-nijmegen" target="_blank" style="color: #fff;">
+                                <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                                Radboud University
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="sponsor-border"> 
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">Thank you for supporting Hack{h}erQuest!</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+        </div> -->
+    </div>
+
+    <!-- BINARY NINJA -->
+    <div class="sponsor-highlight">
+        <div class="sponsor-border"> <!--  style="margin-bottom: 0.8em;"> -->
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">Binary Ninja</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+        </div>
+        <div class="page-content white-page-content">
+            <div class="content-wrapper">
+                <div class="success-flex">
+                    <div class="success-image" style="max-height: 600px; max-width: 560px;">
+                        <img src="../pictures/binja-logo.svg" alt="Binary Ninja" style="box-shadow: none !important;"/>
+                    </div>
+                    <div class="success-text">
+                        <h2 class="section-title" style="color: black;">Binary Ninja</h2>
+                        <p class="black-text"> 
+                            Binary Ninja is an interactive decompiler, disassembler, debugger, and binary analysis platform built by 
+                            reverse engineers, for reverse engineers. Developed with a focus on delivering a high-quality API for 
+                            automation and a clean and usable GUI, Binary Ninja is in active use by malware analysts, vulnerability 
+                            researchers, and software developers worldwide. Decompile software built for many common architectures on 
+                            Windows, macOS, and Linux for a single price, or try out one of their limited (but free!) versions.
+                            <br><br>
+                            Binary Ninja loves to give back to the reverse engineering community, and is kindly supporting our initiative 
+                            to promote diversity in cybersecurity. 
+                            <br><br>
+                            Read more about Binary Ninja here:
+                            <br>
+                            <a href="https://binary.ninja/" style="color:black">https://binary.ninja/</a> 
+                        </p>
+                        <br><br>
+                        <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                            <a href="https://slack.binary.ninja/" target="_blank" style="color: black;">
+                                <img src="../pictures/slack.svg" alt="Slack" />
+                                Join the public Binary Ninja Slack Channel
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CYBERELLA -->
+    <div class="sponsor-highlight">
+        <div class="sponsor-border"> <!--  style="margin-bottom: 0.8em;"> -->
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">Cyberella</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+        </div>
+        <div class="page-content black-page-content" style="background: #281030;"> <!--style="background: #b25a08; style="background: #ca6609;" -->
+            <div class="content-wrapper">
+                <div class="success-flex">
+                    <div class="success-image" style="max-height: 680px; max-width: 680px;">
+                        <img src="../pictures/Cyberella_brandingelement04_lightbg_transparent 1.png" alt="Cyberella" class="filter-white" style="box-shadow: none !important;"/>
+                    </div>
+                    <div class="success-text">
+                        <h2 class="section-title" style="color: #fff;">Cyberella</h2>
+                        <p class="white-text"> 
+                            There is a significant cybersecurity skills gap, with millions of unfilled positions across the globe. Women remain underrepresented in technical 
+                        fields such as Information Technology (IT) and Cybersecurity. In the Netherlands, for example, only 13% of professionals in IT are women. This is 
+                        a reality that must change.
+                        <br><br>
+                        To address this imbalance, a new global initiative is being launched: The Cyberella — an international brand and movement dedicated to empowering 
+                        women through education and training to fully immerse themselves in the world of cybersecurity.
+                        <br><br>
+                        The Cyberella aims to build a strong, inclusive community of women in cybersecurity worldwide. They are kindly sponsoring Hack{h}erQuest to 
+                        support our mission of empowering women in cybersecurity.
+                        <br><br>
+                        Read more about Cyberella here:<br>
+                        <a href="https://cyberella.com/" style="color:white">https://cyberella.com/</a> 
+                        </p>
+                        <br><br>
+                        <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                            <a href="https://www.linkedin.com/company/cyberella/" target="_blank" style="color: #fff;">
+                                <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                                Cyberella
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="sponsor-border"> 
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">Thank you for supporting Hack{h}erQuest!</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+        </div> -->
+    </div>
+
+    <!-- CHALLENGE THE CYBER SPONSORSHIP -->
+    <div class="sponsor-highlight">
+        <div class="sponsor-border"> <!--  style="margin-bottom: 0.8em;"> -->
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">Challenge The Cyber</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+        </div>
+        <div class="page-content black-page-content"> <!--style="background: #b25a08; style="background: #ca6609;" -->
+            <div class="content-wrapper">
+                <div class="success-flex">
+                    <div class="success-image" style="max-height: 400px; max-width: 360px;">
+                        <img src="../pictures/Challenge-the-cyber-150x150.png" alt="Challenge The Cyber" style="box-shadow: none !important;"/>
+                    </div>
+                    <div class="success-text">
+                        <h2 class="section-title" style="color: #fff;">Challenge The Cyber</h2>
+                        <p class="white-text"> 
+                            The Challenge the Cyber (CTC) ​​Foundation organizes cybersecurity events for pupils and students. 
+                            The annual Challenge the Cyber ​​CTF, the Cyber ​​Bootcamp, and the deployment to the European 
+                            Cybersecurity Challenge are the main pillars, complemented by training and networking activities.
+                            <br><br>
+                            CTC receives support from a growing group of volunteers and friends. Together, they have one goal: 
+                            to expand the pool of young cybersecurity talent, make it more diverse, and provide them with the 
+                            resources to excel. 
+                            <br><br>
+                            Unfortunately, the number of young people who want to develop into technical 
+                            cybersecurity specialists has lagged behind the needs of the business community and government for 
+                            years. They contribute to addressing this shortage and, in doing so, are fighting for a secure 
+                            digital Netherlands. 
+                            <br><br>
+                            Challenge The Cyber is kindly sponsoring Hack{h}erQuest to support our 
+                            mission of empowering women in cybersecurity. 
+                            <br><br>
+                            Read more about Challenge The Cyber here:<br>
+                            <a href="https://challengethecyber.nl/" style="color:white">https://challengethecyber.nl/</a> 
+                        </p>
+                        <br><br>
+                        <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                            <a href="https://www.linkedin.com/company/challengethecyber" target="_blank">
+                                <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                                Challenge The Cyber
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sponsor-border"> <!-- style="margin-top: 0.8em;"> -->
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+            <span class="sponsor-star">★</span>
+        </div>
+    </div>
+
+    <!-- ROOTNET -->
+    <div class="page-content white-page-content" style="background: #fae6e6;">
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-image" style="max-height: 520px; max-width: 520px;"> 
+                    <img src="../pictures/Rootnet_Logo_1785PMS.png" alt="Rootnet" style="box-shadow: none !important;"/>
+                </div>
+                <div class="success-text">
+                    <h2 class="section-title" style="color: #000;">Rootnet</h2>
+                    <p class="black-text"> 
+                        Rootnet × Hack{h}erquest
+                        <br><br>
+                        Empowering the next generation in Cybersecurity & IT.
+                        <br><br>
+                        Rootnet is the managed hosting partner for more than 11.000 organizations across the Netherlands. From established names to fast growing startups building tomorrow's digital landscape. What do they all have in common? They rely on our secure, scalable, and fast infrastructure.
+                        <br><br>
+                        But technology alone isn't the full story.
+                        That's why we proudly support Hack{h}erquest.
+                        <br><br>
+                        Initiatives that encourage girls and young women to explore IT and security are exactly the kind of things we love to stand behind. In a field that evolves at high speed, diverse perspectives aren't a nice-to-have, they're essential. And let's be honest: the future of IT becomes smarter, stronger, and more creative when more women step into the arena.
+                        <br><br>
+                        Curious to see what drives us at Rootnet?
+                        Discover how we work, what we stand for, and why more and more IT talent chooses to join our journey.
+                        <br><br>
+                        Read more about Rootnet here:<br>
+                        <a href="https://www.rootnet.nl" style="color:black">https://www.rootnet.nl</a> 
+                    </p>
+                    <br><br>
+                    <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                        <a href="https://www.linkedin.com/company/rootnet-managed-hosting/" target="_blank" style="color: #000;">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            Rootnet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- UNIXERIUS -->
+    <div class="page-content white-page-content">
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-image" style="max-height: 520px; max-width: 520px;"> 
+                    <img src="../pictures/unixerius-logo.svg" alt="Unixerius" style="box-shadow: none !important;"/>
+                </div>
+                <div class="success-text">
+                    <h2 class="section-title" style="color: #000;">Unixerius</h2>
+                    <p class="black-text"> 
+                        Unixerius is a small, Dutch consulting firm specialized in IT security and infrastructure.
+                        <br><br>
+                        What sets Unixerius apart is not the scale of its projects or the size of its team, but its 
+                        personal and people-centered approach. The company was founded by Dick Krijgsman on the simple 
+                        desire to help friends succeed. 
+                        <br><br>
+                        Unixerius aims to aid others in their careers. They provide DevSecOps and Git workshops, and they 
+                        are kindly sponsoring Hack{h}erQuest to support our mission of empowering women in cybersecurity.
+                        <br><br>
+                        Read more about Unixerius here:<br>
+                        <a href="https://kedalion.nl/" style="color:black">https://kedalion.nl/</a> 
+                    </p>
+                    <br><br>
+                    <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                        <a href="https://www.linkedin.com/company/unixerius/" target="_blank" style="color: #000;">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            Unixerius
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BARBAROSSA -->
+    <div class="page-content black-page-content" style="background: #744005;">
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-image" style="max-height: 400px; max-width: 360px;">
+                    <img src="../pictures/barbarossa_logo_wit.svg" alt="Barbarossa" style="box-shadow: none !important;"/>
+                </div>
+                <div class="success-text">
+                    <h2 class="section-title">Barbarossa</h2>
+                    <p class="white-text"> 
+                        Situated on a quiet square just seconds from Nijmegen's historic city center and housed in a former warehouse, 
+                        Barbarossa offers clean, stylish, and safe accommodations in a relaxed and welcoming environment. Relax on their 
+                        spacious rooftop terrace, curl up in their cozy living room, or simply enjoy a stroll through this unique and 
+                        vibrant city. They also offer free Wi-Fi, board games, and books. Their friendly staff is happy to help you enjoy 
+                        the city like a true local!
+                        <br><br>
+                        Barbarossa is kindly sponsoring Hack{h}erQuest to support our mission of empowering women in cybersecurity.
+                        <br><br>
+                        Read more about Barbarossa here:<br>
+                        <a href="https://barbarossahostel.nl/en/" style="color:white">https://barbarossahostel.nl/en/</a> 
+                    </p>
+                    <br><br>
+                    <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                        <a href="https://www.facebook.com/BarbarossaHostel/" target="_blank" style="color: white;">
+                            <img src="../pictures/facebook.png" alt="Facebook" />
+                            Barbarossa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STUDSEC SPONSORSHIP -->
+    <div class="page-content black-page-content" style="background: #003550;"> <!-- style="background: #003550;" -->
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-image" style="max-height: 400px; max-width: 360px;">
+                    <img src="../pictures/studsec_Logo_background_transparent.png" alt="StudSec" style="box-shadow: none !important;"/>
+                </div>
+                <div class="success-text">
+                    <h2 class="section-title" style="color: #fff;">StudSec</h2>
+                    <p class="white-text"> 
+                        StudSec is a Student CyberSecurity Association based at VU Amsterdam, 
+                        committed to making the CyberSecurity field more accessible to every 
+                        student. Their mission is fulfilled through hosting workshops and 
+                        tutorials across various sectors of cybersecurity, complemented by 
+                        continuous mentorship from industry professionals. Their goal is to 
+                        offer a platform for students to learn and grow through practical 
+                        experience, networking, and knowledge sharing. 
+                        <br><br>
+                        StudSec is kindly taking care of the CTF infrastructure, as well as
+                        providing a workshop (given by Josephine Dodde).
+                        <br><br>
+                        Read more about StudSec here:<br>
+                        <a href="https://studsec.nl/" style="color:white">https://studsec.nl/</a> 
+                    </p>
+                    <br><br>
+                    <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                        <a href="https://www.linkedin.com/company/vustudsec" target="_blank">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            StudSec
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CYBERELLA -->
+    <!-- <div class="page-content white-page-content">
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-text">
+                    <h2 class="section-title" style="color: #000;">Cyberella</h2>
+                    <h3 class="section-title" style="color: #000;">Company in Nijmegen</h3>
+                    <p class="black-text"> 
+                        There is a significant cybersecurity skills gap, with millions of unfilled positions across the globe. Women remain underrepresented in technical 
+                        fields such as Information Technology (IT) and Cybersecurity. In the Netherlands, for example, only 13% of professionals in IT are women. This is 
+                        a reality that must change.
+                        <br><br>
+                        To address this imbalance, a new global initiative is being launched: The Cyberella — an international brand and movement dedicated to empowering 
+                        women through education and training to fully immerse themselves in the world of cybersecurity.
+                        <br><br>
+                        The Cyberella aims to build a strong, inclusive community of women in cybersecurity worldwide. They are kindly sponsoring Hack{h}erQuest to 
+                        support our mission of empowering women in cybersecurity.
+                        <br><br>
+                        <a href="https://cyberella.com/" style="color:black">Read more about Cyberella here.</a> 
+                    </p>
+                    <br><br>
+                    <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                        <a href="https://www.linkedin.com/company/cyberella/" target="_blank" style="color: #000;">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            Cyberella
+                        </a>
+                    </div>
+                </div>
+                <div class="success-image" style="max-height: 520px; max-width: 520px;">
+                    <img src="../pictures/Cyberella_brandingelement04_lightbg_transparent 1.png" alt="Cyberella"/>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ANONYMOUS CONTRIBUTORS -->
+    <div class="page-content white-page-content"> <!-- style="background: #003550;" -->
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-text">
+                    <h2 class="section-title" style="color: #000;">Anonymous contributors</h2>
+                    <p class="black-text"> 
+                         We would also like to thank the anonymous contributors for their generous donations to help make this event possible.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <p class="footer black-text">© 2024 Hack{h}erQuest &#10084;</p>
+</footer>
+</body>
+</html>

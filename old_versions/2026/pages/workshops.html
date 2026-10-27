@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="../pictures/logo.jpeg">
+        <title>Hack{h}erQuest</title>
+        <link href="../hackherquest.css" rel="stylesheet">
+        <script src="../hackherquest.js"></script>
+        <style>
+            body {
+                background: linear-gradient(135deg, #5a00d0, #ff0080);
+                background-size: cover;
+                min-height: 100vh;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            .success-image-row {
+                display: flex;
+                flex-direction: row;
+                gap: 2rem;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .success-image-row img {
+                max-width: 220px;
+                width: 100%;
+                height: auto;
+                border-radius: 12px;
+                box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+            }
+        </style>
+    </head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <a href="javascript:void(0);" class="icon" id="hamburger" onclick="toggleMenu()">&#9776;</a>
+        <ul class="navbar" id="navbar">
+            <!-- <li class="navbar-item icon"><a href="javascript:void(0);" onclick="toggleMenu()">&#9776;</a></li> -->
+            <li class="navbar-item"><a href="../index.html">Home</a></li>
+            <li class="navbar-item"><a href="./whatisctf.html">What is a CTF?</a></li>
+            <li class="navbar-item"><a href="./team.html">The team</a></li>
+            <li class="navbar-item"><a href="./schedule.html">Schedule</a></li>
+            <li class="navbar-item"><a class="active" href="./workshops.html">Workshops</a></li>
+            <li class="navbar-item"><a href="./signup.html">Sign up</a></li>
+            <li class="navbar-item"><a href="./sponsors.html">Sponsors</a></li>
+            <li class="navbar-item"><a href="./contact.html">Contact</a></li>
+            <li class="navbar-item"><a href="./acknowledgements.html">Acknowledgements</a></li>
+            <!-- <li class="navbar-item"><a href="./previous_editions.html">Previous editions</a></li> -->
+        </ul>
+    </nav>  
+
+    <div class="hero-spacer" style="height: 40vh;">
+        <h1 style="color: white; text-align: center; margin: 0%; text-shadow: none;">Workshops</h1>
+    </div>
+
+    <!-- INTRODUCTION -->
+    <div class="page-content white-page-content">
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-text" style="max-width: 1200px;text-align: center;flex: 1 1 55%;margin-left: auto;margin-right: auto;">
+                <h2 class="section-title" style="color: #000000;">Extend your knowledge</h2>
+                <p class="black-text"> 
+                    In order to train your skills before the CTF, we have arranged several workshops that will be held during the morning.
+                    These workshops will cover various topics in Cyber Security. For the current edition, you can choose between: Android hacking,
+                    ROP exploitation (memory corruption), and a web workshop by StudSec. All workshops will be held on-site. However, if you 
+                    are unable to attend in person, please let us know and we can try to arrange a remote option (no promises).
+                    <!-- <br><br>
+                    Sign-ups for both the workshops as well as the CTF will open halfway through October. If you already still wish to secure a spot, 
+                    please e-mail us at:  -->
+                </p>
+                <!-- <p class="black-text" style="font-weight: bold;">hackherquest "at" gmail "dot" com</p>
+                <p class="black-text">
+                    Please keep in mind that the schedule and workshops can change.
+                </p> -->
+                </div>
+                <div class="success-image-row" style="gap: 2rem; margin-left: auto; margin-right: auto; margin-bottom: 2%;">
+                    <img src="../pictures/z3-1.png" alt="Success 2025" style="max-height: 420px; max-width: 520px;"/>
+                    <img src="../pictures/lizzy.png" alt="Success 2025" style="max-height: 420px; max-width: 480px;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- STUDSEC WORKSHOP -->
+    <div class="page-content white-page-content" style="background: #003550;">  <!-- #0077B3 -->
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-image" style="max-height: 400px; max-width: 360px;">
+                    <img src="../pictures/studsec_Logo_background_transparent.png" alt="StudSec" />
+                </div>
+                <div class="success-text">
+                    <h2 class="section-title"  style="color: #fff;">Web hacking</h2>
+                    <h3 class="section-title"  style="color: #fff;">Josephine Dodde and Asia Tall Diouk</h3> 
+                    <p class="white-text" style="color: #fff; justify-self: center; font-weight: bold;"> 
+                        StudSec
+                    </p>
+                    <p class="white-text"> 
+                        Josephine is a member of StudSec, a cyber security association located at VU University Amsterdam. 
+                        She is incredibly skilled, having won the Hack4Her competition trice, in 2021, 2022 and 2023.
+                        She loves to be involved in the community and is regularly attending ICT-related events.
+                        <br><br>
+                        Asia is currently working at Microsoft as a Data center Technitian intern. She also volunteers at 
+                        #TheTalentClub, where she informs others about MBO studies, ICT, and cybersecurity topics.
+                        She played in the Challenge The Cyber CTF last year as well, and got selected for the bootcamp due 
+                        to her performance. 
+                        <br><br>
+                        In this workshop Josephine and Asia will teach you the basics of web hacking. You will learn how to
+                        find and exploit common vulnerabilities in web applications. 
+                        <br><br>
+                        This workshop is suitable for complete beginners. No prior experience is required at all. 
+                    </p>
+                    <br><br>
+                    <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                        <a href="https://www.linkedin.com/in/josephine-dodde/" target="_blank"  style="color: #fff;">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            Josephine Dodde
+                        </a>
+                    </div>
+                    <br> 
+                    <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                        <a href="https://www.linkedin.com/in/asia-tall-diouk-71586b2b5/" target="_blank"  style="color: #fff;">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            Asia Tall Diouk
+                        </a>
+                    </div>
+                    <br>
+                    <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                        <a href="https://www.linkedin.com/company/vustudsec" target="_blank"  style="color: #fff;">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            StudSec
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- ANDROID HACKING WORKSHOP -->
+    <div class="page-content black-page-content">
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-text">
+                    <h2 class="section-title" style="color: #fff;">Android hacking</h2>
+                    <h3 class="section-title" style="color: #fff;">Rick de Jager and Thijs Molendijk</h3>
+                    <p class="white-text"> 
+                        Rick and Thijs are both ex-TeamNL CTF players from the Challenge The Cyber program. 
+                        <br><br>
+                        Rick also participated in the International Cyber security Challenge (ICC) and is now working as a private researcher. 
+                        He has achieved various successes in the Pwn2Own competition. 
+                        <br><br>
+                        Thijs created his first iOS app at just 11 years old and is now working at Zero IT lab. Whenever he is not working, 
+                        he is playing CTFs internationally.
+                        <br><br>
+                        In this workshop they will walk you through the  basics of Android hacking. No previous knowledge on Android hacking 
+                        is required. However, participants are expected to know their way around a disassembler. 
+                        <br><br>
+                        Experienced CTFers and participants who also were at Hack{h}erQuest2025 last year are encouraged choose this workshop. 
+                        If you are less experienced but would still like to attend, please send an email to:
+                    </p>
+                        <p class="white-text" style="font-weight: bold;">hackherquest "at" gmail "dot" com</p>
+                    <p class="white-text"> 
+                        to discuss what is possible.
+                    </p>
+                    <br><br>
+                    <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                        <a href="https://www.linkedin.com/in/rdjgr/" target="_blank">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            Rick de Jager
+                        </a>
+                        <a href="https://x.com/rdjgr?lang=en" target="_blank">
+                            <img src="../pictures/x-logo-white.svg" alt="X (Twitter)" style="background:#222; border-radius:4px; padding:4px;" />
+                            @rdjgr
+                        </a>
+                        <a href="https://www.linkedin.com/in/thijsmolendijk/" target="_blank">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            Thijs Molendijk
+                        </a>
+                    </div>
+                </div>
+                <div class="success-image" style="max-height: 420px; max-width: 360px;">
+                    <img src="../pictures/android.png" alt="Android hacking" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ROP WORKSHOP -->
+    <div class="page-content white-page-content">
+        <div class="content-wrapper">
+            <div class="success-flex">
+                <div class="success-image" style="max-height: 520px; max-width: 520px;">
+                    <img src="../pictures/rop.png" alt="Lisanne Weidmann"/>
+                </div>
+                <div class="success-text">
+                    <h2 class="section-title" style="color: #000;">ROP exploitation</h2>
+                    <h3 class="section-title" style="color: #000;">Lisanne Weidmann and Novi Liuther</h3>
+                    <p class="black-text"> 
+                        Lisanne is an ex-TeamNL CTF player from the Challenge The Cyber program. She also has some
+                        work experience as a Security Operations Center (SOC) analyst. She is currently doing an 
+                        internship at Cescalabs in hardware security as part of her master's degree.
+                        <br><br>
+                        Novi is the chair of Hack{h}erQuest. She recently finished her internship at  Bureau 
+                        Veritas Cybersecurity, and will start her new job at Rabobank soon.
+                        <br><br>
+                        In this workshops Lisanne will give you an introduction into memory exploitation through
+                        Return Oriented Programming (ROP). She will explain the basics and teach you how to build
+                        a simple ROP chain.
+                        <br><br> 
+                        This workshop is suitable for participants with basic Linux knowledge. No prior experience 
+                        with memory exploitation is required. Some CTF experience is recommended, but not necessary.
+                        If you are less experienced but would still like to attend, please send an email to
+                    </p>
+                        <p class="black-text" style="font-weight: bold;">hackherquest "at" gmail "dot" com</p>
+                    <p class="black-text"> 
+                        to discuss what is possible.
+                    </p>
+                    <br><br>
+                    <div class="speaker-socials" style="margin: 0%; align-items: center;">
+                        <a href="https://www.linkedin.com/in/lisanne-weidmann-878168192/" target="_blank" style="color: #000;">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            Lisanne Weidmann
+                        </a>
+                        <a href="https://www.linkedin.com/in/noviliuther/" target="_blank" style="color: #000;">
+                            <img src="../pictures/linkedin.png" alt="LinkedIn" />
+                            Novi Liuther
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <p class="footer black-text">© 2024 Hack{h}erQuest &#10084;</p>
+</footer>
+</body>
+</html>
